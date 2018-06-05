@@ -1,0 +1,15 @@
+<h3>以下の内容で、投稿する。</h3>
+
+<%= form_with(model: @insta,url: instagrams_path,local: true) do |form| %>
+<%= form.hidden_field :content %>
+
+<div class = "confirm_img"><%= image_tag(@insta.image.url) %></div>
+  <%= hidden_field_tag :"cache[image]",@insta.image.cache_name %>
+<p>内容:<%= @insta.content %></p>
+<%= form.submit "投稿する" %>
+<% end %>
+
+<%= form_with(model: @insta, url: new_instagram_path, local: true, method: 'get') do |form| %>
+  <%= hidden_field_tag :"cache[image]",@insta.image.cache_name %>
+  <%= form.submit "戻る", name: 'back' %>
+<% end %>

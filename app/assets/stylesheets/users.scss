@@ -1,0 +1,26 @@
+//ユーザーのお気に入り画像
+.user_show_img img {
+  border-radius: 240px;
+  height: 280px;
+  width: 280px;
+}
+
+//中央揃え
+div.col-sm-6.user_show_img {
+  text-align: center;
+}
+
+.sign_up {
+  text-align: center;
+}
+
+.sign_up_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.sign_up_btn input {
+  width: 150px;
+}

@@ -1,0 +1,33 @@
+<h1>投稿一覧</h1>
+
+  <div class="container">
+    <div class="row">
+
+      <% @instas.each do |ins| %>
+        <div class="col-sm-4 col-md-3 index_img">
+          <% if ins.user == current_user %>
+            <p><%= ins.user.name %>さんの投稿</p>
+            <%= image_tag ins.image %>
+            <ul>
+              <li><%= ins.content %></li>
+            </ul>
+
+          <div class="btn-group btn-group">
+            <button type="button" class="btn btn-primary"><%= link_to '詳細',instagram_path(ins.id) %></button>
+            <button type="button" class="btn btn-primary"><%= link_to '編集',edit_instagram_path(ins.id) %></button>
+            <button type="button" class="btn btn-primary"><%= link_to '削除',instagram_path(ins.id),method: :delete ,data: { confirm: '本当に削除して良いですか?' } %></button>
+          </div>
+
+          <% else %>
+
+            <p><%= ins.user.name %>さんの投稿</p>
+            <%= image_tag ins.image %>
+            <ul>
+              <%= ins.content %>
+            </ul>
+            <button type="button" class="btn btn-primary"><%= link_to '詳細',instagram_path(ins.id) %></button>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>

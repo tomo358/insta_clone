@@ -1,0 +1,157 @@
+//newページ
+h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #4e5665;
+  height: 20vh;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.insta_content {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #4e5665;
+}
+
+.picture_string {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 0px;
+  color: #4e5665;
+}
+
+.outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit {
+  margin-left: 100px;
+}
+
+input[type=file] {
+    display: block;
+    margin-bottom: 40px;
+    color: #4e5665;
+}
+
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    display: block;
+    width: 80px;
+    height: 30px;
+    line-height: 20px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    background-color: #49a9d4;
+    border-radius: 5px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 100px;
+}
+
+label {
+  font-weight: 500;
+}
+
+//indexページ
+h1 {
+  height: 20vh;
+  text-align: center;
+  color: #4e5665;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  height: 20vh;
+}
+
+div.col-sm-4.index_img {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.index_img p {
+  font-size: 20px;
+  color: #4e5665;
+  margin-bottom: 0px;
+}
+
+li {
+  font-size: 20px;
+  color: #4e5665;
+}
+
+ul {
+  font-size: 20px;
+  color: #4e5665;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #49a9d4;
+    border-color: #49a9d4;
+}
+
+//　写真を丸型
+.index_img img{
+    border-radius: 120px;
+    height: 160px;
+    width: 160px;
+}
+
+//liタグの・を消す + 中央揃え
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+//ヘッダーの内容を横並び
+ul.header {
+  padding: 20px;
+}
+
+ul.header li {
+  display: inline;
+}
+
+//中央揃え
+div.col-sm-4.index_img {
+  text-align: center;
+}
+
+//showページ
+.insta_show_img img{
+  border-radius: 240px;
+  height: 280px;
+  width: 280px;
+}
+
+div.insta_show_img {
+text-align: center;
+}
+
+//edit
+h2 {
+  height: 70px;
+}
+
+.inner img {
+  border-radius: 260px;
+  height: 300px;
+  width: 300px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+input[type=file] {
+  margin-left: 40px;
+}

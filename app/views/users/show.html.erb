@@ -1,0 +1,17 @@
+<h1><%= @user.name %>のお気に入り</h1>
+
+<div class="container">
+  <div class="row">
+
+    <% @favorites.each do |favorites_insta| %>
+      <div class="col-sm-6 user_show_img">
+        <tr>
+          <td class="favorite_img"><%= image_tag favorites_insta.instagram.image %></td>
+        </tr>
+        <ul>
+          <li><%= favorites_insta.instagram.content %></li>
+        </ul>  
+      </div>
+    <% end %>
+  </div>
+</div>

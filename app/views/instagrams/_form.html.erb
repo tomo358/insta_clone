@@ -1,0 +1,30 @@
+<%= form_with(model: @insta, local: true ,url: choose_new_or_edit) do |form| %>
+  <% if @insta.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= @insta.errors.count %>件のエラーがあります。</h2>
+      <ul>
+
+        <% @insta.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="insta_content">
+    <%= form.label :コメント %>
+    <%= form.text_field :content %>
+  </div>
+
+  <p class="picture_string">写真</p>
+
+  <div class="outer">
+    <div class="inner">
+      <%= image_tag(@insta.image.url) if @insta.image.url %>
+      <%= form.file_field :image, id: :instagram_image %>
+      <%= form.hidden_field :image_cache %>
+      <div class="submit"><%= form.submit %></div>
+    </div>
+  </div>
+
+<% end %>
