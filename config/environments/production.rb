@@ -1,6 +1,6 @@
 Rails.application.configure do
 
-  config.action_mailer.default_url_options = { host: 'https://git.heroku.com/salty-ravine-62862.git' }
+  config.action_mailer.default_url_options = { host: 'https://git.heroku.com/stormy-bayou-63732.git' }
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
    user_name: ENV['SENDGRID_USERNAME'],

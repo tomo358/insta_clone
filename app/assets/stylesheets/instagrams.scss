@@ -155,3 +155,58 @@ h2 {
 input[type=file] {
   margin-left: 40px;
 }
+
+//confirm
+h3.confirm_coment {
+  top: 20px;
+  margin-top: 80px;
+  font-size: 40px;
+}
+
+.confirm_img img {
+  border-radius: 300px;
+  height: 340px;
+  width: 340px;
+}
+
+div.confirm_img {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.confirm_img p {
+  margin-top: 10px;
+  color: #4e5665;
+  font-size: 40px;
+}
+
+.contribution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.return {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-btn-primary_1 {
+  -webkit-appearance: button;
+  cursor: pointer;
+  display: block;
+  width: 80px;
+  height: 30px;
+  line-height: 20px;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  background-color: #49a9d4;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 100px;
+}
