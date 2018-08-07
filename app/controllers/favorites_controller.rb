@@ -1,5 +1,4 @@
 class FavoritesController < ApplicationController
-
   def create
     favorite = current_user.favorites.create(instagram_id: params[:instagram_id])
     redirect_to instagrams_url, notice:"#{favorite.instagram.user.name}さんの投稿をお気に入り登録しました"

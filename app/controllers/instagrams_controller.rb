@@ -1,5 +1,4 @@
 class InstagramsController < ApplicationController
-
   before_action :logged_in_user, only: [:new, :edit, :show, :destroy]
 
   def index
